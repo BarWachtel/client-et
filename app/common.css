@@ -1,0 +1,59 @@
+﻿body {
+}
+
+.absolute {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.selected {
+    background-color: lightgrey;
+}
+
+#loggedInUser {
+    /*width: 70%;
+    height: 40%;*/
+    height: 300px;
+    width: 700px;
+    min-height: 300px;
+    min-width: 700px;
+    border: 3px solid purple;
+    position: relative;
+}
+
+#userMsgs {
+    width: 630px;
+    height: 100%;
+    left: 0;
+    overflow-y: scroll;
+}
+    #userMsgs ul {
+        list-style-type: none;
+        padding-left: 5px;
+        margin-top: 5px;
+    }
+
+#onlineUsers {
+    height: 100%;
+    width: 70px;
+    min-width: 70px;
+    padding-left:0;
+    border-left: 2px groove grey;
+    right: 0;
+}
+
+    #onlineUsers ul {
+        list-style-type: none;
+        padding-left: 8px;
+    }
+
+    #onlineUsers li {
+        cursor: pointer;
+    }
+
+     #onlineUsers li:hover {
+        background-color:lightgrey;
+    }
+
+

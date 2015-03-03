@@ -1,0 +1,11 @@
+﻿<form id='loginForm' name="loginForm">
+    <input id='username' placeholder='Username' ng-model="username">
+    <input id='password' type='password' placeholder='Password' ng-model="password">
+    <input id='confirmPassword' type='password' placeholder='Confirm password' ng-model="confirmPassword"
+        hidden disabled>
+    <input type='submit' value='Login' ng-click="userLogin(e)">
+    <input id='registerButton' type='button' value='Register' ng-click="registerUser(e)" disabled>
+    <input id='displayRegisterFormButton' type='button' value='Create account' ng-click="displayRegisterForm(e)">
+</form>
+
+<button value="Chat View" ng-click="changeView('chat')"></button>

@@ -1,0 +1,27 @@
+﻿<h1>Chat View</h1>
+<div id="loggedInUser" class="absolute">
+    <div id="userMsgs">
+        <ul>
+            <li ng-repeat="userMsg in userMsgs">
+                {{ userMsg.user }}: {{ userMsg.msg }}
+            </li>
+        </ul>
+
+    </div>
+
+    <div id="onlineUsers" class="absolute">
+        <ul>
+            <li ng-repeat="onlineUser in onlineUsers" ng-click="userClicked(onlineUser)">
+                {{ onlineUser.name }}
+            </li>
+        </ul>
+    </div>
+    <br />
+
+    <!--<input type="text" id="userName" placeholder="Enter Username Here" />-->
+    <!--<input type="button" id="addUser" value="Add User" />-->
+    <!--<input type="button" id="removeUser" value="Remove User" /><br />-->
+    <!--<br />-->
+    <!--<input type="text" id="msg" placeholder="Enter Msg Text Here" size="35" />-->
+    <!--<input type="button" id="addMsg" value="Add Msg" />-->
+</div>
